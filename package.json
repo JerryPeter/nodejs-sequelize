@@ -1,0 +1,15 @@
+{
+  "name": "npmjs-sequelize",
+  "version": "1.0.0",
+  "description": "Node ORM dengan Sequelize",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jerry Peter",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^6.5.0",
+    "tedious": "^11.0.5"
+  }
+}
