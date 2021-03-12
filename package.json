@@ -9,6 +9,7 @@
   "author": "Jerry Peter",
   "license": "ISC",
   "dependencies": {
+    "faker": "^5.4.0",
     "sequelize": "^6.5.0",
     "tedious": "^11.0.5"
   }
