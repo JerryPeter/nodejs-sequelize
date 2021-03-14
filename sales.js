@@ -9,13 +9,12 @@ for (i = 0; i < 1000; i++) {
         customer: faker.name.findName(),
         date: faker.date.between('2020-01-01', '2021-01-05'),
         amount: faker.random.number({ min: 1000000, max: 90000000 }),
-        item: faker.commerce.productName()
+        item: faker.random.arrayElement(['AQUA', 'FIT', 'COCA COLA'])
       }
       
       models.Sales.create(sales).then(result => {
         console.log("Success");  
       }).catch(error => {
         console.log("Failed");
-      });
-      
+      });      
 }

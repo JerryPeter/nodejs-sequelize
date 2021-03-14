@@ -9,8 +9,10 @@
   "author": "Jerry Peter",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "faker": "^5.4.0",
     "sequelize": "^6.5.0",
+    "sequelize-cli": "^6.2.0",
     "tedious": "^11.0.5"
   }
 }

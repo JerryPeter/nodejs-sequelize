@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "sa",
-    "password": "Sysadmin00",
+    "password": "sysadmin00",
     "database": "DWDemo",
-    "host": "NB-JERRY",
+    "host": "JRRYPTR",
     "dialect": "mssql",
     "port":1433
   },
