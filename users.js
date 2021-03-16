@@ -8,33 +8,36 @@ const models = require('./models');
 
 const saltRounds = 10;
 
-const myPlaintextPassword = 'helloworld';
+const password = 'qwerty';
 
-const someOtherPlaintextPassword = 'not_bacon';
+const otherPassword = 'not_bacon';
 
-bcrypt.hash(myPlaintextPassword, saltRounds, function(err, hash) {
+bcrypt.hash(password, saltRounds, function(err, hash) {
     console.log(hash);
-    bcrypt.compare(myPlaintextPassword, hash).then(function(result) {
+    bcrypt.compare(password, hash).then(function(result) {
         console.log(result);
+    }).catch(function(error) {
+        console.log('error');
     });
 });
 
 
 
 
+var i;
+for (i = 0; i < 1000; i++) {
 
-// var i;
-// for (i = 0; i < 1000; i++) {
-//     const sales = {
-//         firstName: faker.name.findName(),
-//         lastName: faker.date.between('2020-01-01', '2021-01-05'),
-//         email: faker.random.number({ min: 1000000, max: 90000000 }),
-//         password: faker.random.arrayElement(['AQUA', 'FIT', 'COCA COLA'])
-//       }
+    
+    const user = {
+        firstName: faker.name.firstName(),
+        lastName: faker.name.lastName(),
+        email: faker.internet.email(),
+        password: 'password'
+      }
       
-//       models.Sales.create(sales).then(result => {
-//         console.log("Success");  
-//       }).catch(error => {
-//         console.log("Failed");
-//       });      
-// }
+      models.User.create(user).then(result => {
+        console.log("Success");  
+      }).catch(error => {
+        console.log("Failed");
+      });      
+}
