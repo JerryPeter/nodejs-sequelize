@@ -1,4 +1,5 @@
 const { Sequelize } = require('sequelize');
+
 const models = require('./models');
 
 const user = {
@@ -6,6 +7,7 @@ const user = {
   lastName: "due",
   email: "john@due.com",
 }
+
 
 models.User.create(user).then(result => {
   console.log("Success");  
