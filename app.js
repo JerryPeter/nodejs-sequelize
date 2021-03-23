@@ -1,7 +1,6 @@
 const { Sequelize } = require('sequelize');
 const models = require('./models');
 
-
 const user = {
   firstName: "John",
   lastName: "due",
