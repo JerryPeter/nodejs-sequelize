@@ -2,7 +2,6 @@ const { Sequelize } = require('sequelize');
 const faker = require('faker');
 const models = require('./models');
 
-
 var i;
 for (i = 0; i < 1000; i++) {
     const sales = {
